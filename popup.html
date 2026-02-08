@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebHighlighter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>WebHighlighter</h1>
+      <p class="subtitle">Highlights and connections across the web.</p>
+
+      <div class="stats">
+        <div>
+          <span class="stat-number" id="highlight-count">0</span>
+          <span class="stat-label">Highlights</span>
+        </div>
+        <div>
+          <span class="stat-number" id="connection-count">0</span>
+          <span class="stat-label">Connections</span>
+        </div>
+      </div>
+
+      <button id="open-map">Open knowledge map</button>
+
+      <h2>Recent highlights</h2>
+      <ul id="highlight-list"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Knowledge Map</title>
+    <link rel="stylesheet" href="map.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Knowledge Map</h1>
+        <p>Connections between related highlights.</p>
+      </div>
+      <div class="controls">
+        <button id="refresh">Refresh</button>
+      </div>
+    </header>
+    <main>
+      <div id="graph"></div>
+      <aside>
+        <h2>Highlight details</h2>
+        <div id="details" class="details-empty">Select a node to see details.</div>
+      </aside>
+    </main>
+
+    <script src="map.js"></script>
+  </body>
+</html>
