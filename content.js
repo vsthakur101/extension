@@ -156,7 +156,12 @@ function handleCreateHighlight() {
     return;
   }
 
-  const annotation = window.prompt("Add a note or annotation (optional):", "") || "";
+  const annotationResult = window.prompt("Add a note or annotation (optional):", "");
+  if (annotationResult === null) {
+    hideHighlightButton();
+    return;
+  }
+  const annotation = annotationResult || "";
   const highlightId = `wh_${Date.now()}_${Math.floor(Math.random() * 100000)}`;
 
   wrapRangeWithHighlight(range, highlightId);
